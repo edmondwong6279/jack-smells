@@ -1,0 +1,78 @@
+@import "styles/main";
+
+.container {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	right: 0;
+	max-width: 1920px;
+	margin: 0 auto;
+	height: 100%;
+
+	.bannerContainer {
+		position: relative;
+		overflow: hidden;
+		height: 1900px;
+
+		&.bottom {
+			// height: 200vh;
+		}
+
+		.background {
+			width: 100%;
+			height: 100%;
+			background-position: top center;
+			background-repeat: no-repeat;
+			background-size: 1920px;
+
+			&.bg1 {
+				background-image: url("/1. Sky Top Half.png");
+				background-position: bottom;
+			}
+
+			&.bg2 {
+				background-image: url("/2. Hill Background Top Half.png");
+			}
+
+			&.bg3 {
+				background-image: url("/3. Foreground Top Half.png");
+			}
+
+			&.bg5 {
+				background-image: url("/5. Sky Bottom Half.png");
+				// background-position: bottom;
+			}
+
+			&.bg6 {
+				background-image: url("/6. Background Bottom half.png");
+				// background-position: bottom;
+			}
+
+			&.bg7 {
+				background-image: url("/7. Foreground Bottom Half.png");
+				// background-position: bottom;
+			}
+		}
+
+		.grad {
+			position: absolute;
+			inset: 0;
+
+			&.top {
+				background: linear-gradient(transparent 50%, black);
+			}
+
+			&.bottom {
+				background: linear-gradient(black 50%, transparent);
+			}
+		}
+	}
+
+	.middle {
+		width: 100%;
+		height: 1000px;
+		background: black;
+		color: white;
+		font-size: 200px;
+	}
+}
