@@ -1,5 +1,20 @@
 @import "styles/main";
 
 .container {
-	width: 100%;
+    display: flex;
+    margin: 100px;
+
+    .link {
+        width: 300px;
+        height: 50px;
+        background-color: antiquewhite;
+        border: 5px solid greenyellow;
+        text-transform: uppercase;
+        color: black;
+        font-weight: 700;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }

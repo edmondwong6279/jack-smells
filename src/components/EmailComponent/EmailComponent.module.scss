@@ -1,5 +1,38 @@
 @import "styles/main";
 
 .container {
-	width: 100%;
+	@include container;
+
+	.header {
+		font-size: 60px;
+		color: rgb(239, 239, 239);
+		text-transform: uppercase;
+	}
+
+	.gridWrapper {
+		display: flex;
+		justify-content: space-between;
+
+		.leftItem {
+			max-width: 400px;
+
+			.CTAText {
+				font-size: 10px;
+			}
+
+			.input {
+				display: block;
+			}
+
+			.button {
+				display: block;
+			}
+		}
+
+		.iframe {
+			@include iframe;
+			max-width: 700px;
+			width: 50%;
+		}
+	}
 }

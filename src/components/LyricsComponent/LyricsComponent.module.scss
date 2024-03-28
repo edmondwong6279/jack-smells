@@ -1,5 +1,9 @@
 @import "styles/main";
 
 .container {
-	width: 100%;
+    @include container;
+
+    .header {
+        @include bigHeader
+    }
 }

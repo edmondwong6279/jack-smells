@@ -1,14 +1,21 @@
 import styles from "./MerchComponent.module.scss";
 import React, { useState } from "react";
+import Link from "next/link";
+import { ComponentType } from "types";
 
-type Props = {
-  children?: React.ReactNode;
-};
-
-const MerchComponent: React.FunctionComponent<Props> = () => {
+const MerchComponent: React.FunctionComponent<ComponentType> = ({ ref }) => {
   const [] = useState();
 
-  return <div className={styles.container}>LYRICS COMPONENT</div>;
+  return (
+    <div ref={ref} className={styles.container}>
+      <Link
+        href={"https://thepeopleversusmusic.com/merch"}
+        className={styles.link}
+      >
+        Visit Merch Store
+      </Link>
+    </div>
+  );
 };
 
 export default MerchComponent;

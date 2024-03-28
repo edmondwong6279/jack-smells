@@ -5,11 +5,19 @@
 	width: 100%;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-around;
+	height: 100vh;
 
 	.header {
-		color: white;
+		color: rgb(98, 89, 235);
+		margin: 0 50px;
+		text-align: center;
 		font-size: 100px;
+		max-width: 1000px;
+
+		@include tablet {
+			font-size: 150px;
+		}
 	}
 
 	.scroll {

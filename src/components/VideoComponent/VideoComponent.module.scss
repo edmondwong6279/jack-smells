@@ -1,5 +1,39 @@
 @import "styles/main";
 
 .container {
-	width: 100%;
+
+    .header {
+        @include bigHeader;
+    }
+
+    .gridContainer {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+
+        @include tablet {
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        
+        .item {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            
+            @include tablet {
+                flex-direction: row;
+            }
+            
+            .iframe{
+                @include iframe;
+                border: none;
+            }
+
+            .videoTitle {
+                max-width: 200px;
+                text-align: center;
+            }
+        }
+    }
 }

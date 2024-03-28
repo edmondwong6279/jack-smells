@@ -30,7 +30,7 @@ const BackgroundComponent: React.FunctionComponent<Props> = () => {
         <div className={styles.middle} />
         <ParallaxBanner
           layers={[
-            // gradientOverlayBottom,
+            gradientOverlayBottom,
             background5,
             background6,
             background7,

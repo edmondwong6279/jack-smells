@@ -1,5 +1,30 @@
 @import "styles/main";
 
 .container {
-	width: 100%;
+    @include container;
+
+    .header {
+        @include bigHeader;
+    }
+
+    .gridContainer {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+        @include tablet {
+            flex-direction: row;
+        }
+
+        .playlist {
+            border: none;
+            height: 500px;
+            width: 100%;
+
+            @include tablet {
+                height: 500px;
+                width: 30%;
+            }
+        }
+    }
 }

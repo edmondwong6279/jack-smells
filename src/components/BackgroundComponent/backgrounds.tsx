@@ -3,22 +3,21 @@ import styles from "./BackgroundComponent.module.scss";
 import classNames from "classnames";
 
 export const background1: BannerLayer = {
-  translateY: [0, 20],
+  translateY: [0, -40],
   opacity: [1, 0.3],
-  scale: [1, 1.05, "easeOutCubic"],
   shouldAlwaysCompleteAnimation: true,
   children: <div className={classNames(styles.background, styles.bg1)} />,
 };
 
 export const background2: BannerLayer = {
-  translateY: [10, 0],
+  translateY: [40, 10],
   scale: [1, 1.1, "easeOutCubic"],
   shouldAlwaysCompleteAnimation: true,
   children: <div className={classNames(styles.background, styles.bg2)} />,
 };
 
 export const background3: BannerLayer = {
-  translateY: [30, -20],
+  translateY: [20, 0],
   scale: [1, 1.2, "easeOutCubic"],
   shouldAlwaysCompleteAnimation: true,
   children: <div className={classNames(styles.background, styles.bg3)} />,
@@ -42,14 +41,14 @@ export const background5: BannerLayer = {
 };
 
 export const background6: BannerLayer = {
-  // translateY: [50, -30],
+  translateY: [0, -30],
   // scale: [1, 1.1, "easeOutCubic"],
   shouldAlwaysCompleteAnimation: true,
   children: <div className={classNames(styles.background, styles.bg6)} />,
 };
 
 export const background7: BannerLayer = {
-  // translateY: [30, -15],
+  translateY: [0, -40],
   shouldAlwaysCompleteAnimation: true,
   children: <div className={classNames(styles.background, styles.bg7)} />,
 };
